@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo"></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/index.html">Home</a></li>
+								<li class="current"><a href="file:///C:/Users/Jean/Desktop/D11370689/html/ABOUT.html">關於我</a></li>
+								    <li>
+									    <a href="#">作品集</a>
+										<ul>
+											<li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/PORTFOLIO2.html">插畫</a></li>
+											<li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/PORTFOLIO.html">動畫</a></li>
+											<li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/PORTFOLIO3.html">攝影</a></li>
+										</ul>
+									<li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/CONTACT.html">聯絡我</a></li>
+								</li>
+							</ul>
+				        </nav>
+		            </div>
+
+
+				<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					  <div class="numbertext"></div>
+					  <img src="IMAGE/A.png" style="width:100%">
+					  <div class="text"></div>
+					</div>
+				
+					<div class="mySlides fade">
+					  <div class="numbertext"></div>
+					  <img src="IMAGE/C.png" style="width:100%">
+					  <div class="text"></div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="IMAGE/E.png" style="width:100%">
+						<div class="text"></div>
+					</div>
+				
+					<div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="IMAGE/F.png" style="width:100%">
+						<div class="text"></div>
+					</div>
+						
+					<div class="mySlides fade">
+						<div class="numbertext"></div>
+						<img src="IMAGE/B.png" style="width:100%">
+						<div class="text"></div>
+					</div>  
+				
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+					
+					</div>
+					<br>
+					<script>
+						let slideIndex = 1;
+						showSlides(slideIndex);
+					
+						function plusSlides(n) {
+					 	 showSlides(slideIndex += n);
+						}
+					
+						function currentSlide(n) {
+					 	 showSlides(slideIndex = n);
+						}
+					
+						function showSlides(n) {
+						  let i;
+						  let slides = document.getElementsByClassName("mySlides");
+							let dots = document.getElementsByClassName("dot");
+						  if (n > slides.length) {slideIndex = 1}    
+						  if (n < 1) {slideIndex = slides.length}
+						  for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						  }
+						  for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						  }
+						  slides[slideIndex-1].style.display = "block";  
+						  dots[slideIndex-1].className += " active";
+						}
+					</script> 
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
