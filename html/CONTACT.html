@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html" id="logo"></a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li class="current"><a href="file:///C:/Users/Jean/Desktop/D11370689/html/index.html">Home</a></li>
+								<li>
+									<a href="file:///C:/Users/Jean/Desktop/D11370689/html/ABOUT.html">關於我</a>
+									<ul>
+										<li>
+                                            <li><a href="#">作品集</a></li>
+                                            <ul>
+                                                <li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/PORTFOLIO2.html">插畫</a></li>
+                                                <li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/PORTFOLIO.html">動畫</a></li>
+                                                <li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/PORTFOLIO3.html">攝影</a></li>
+                                            </ul>
+										</li>
+										<li><a href="file:///C:/Users/Jean/Desktop/D11370689/html/CONTACT.html">聯絡我</a></li>
+									</ul>
+								</li>
+
+							</ul>
+						</nav>
+
+				</div>
+
+    <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">FACEBOOK</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">INSTAGRAM</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">LINE</button>
+    </div>
+
+    <div id="London" class="tabcontent">
+    <h3>FACEBOOK</h3>
+    <p><a href="http://www.facebook.com/?locale=zh_TW">我的FB帳號</a><br></p>
+    <img src="IMAGE/2.png" width="80%" alt="">
+    </div>
+
+    <div id="Paris" class="tabcontent">
+    <h3>INSTAGRAM</h3> 
+    <p><a href="http://www.instagram.com/child_5968715/">我的IG帳號</a><br></p>
+    <img src="IMAGE/3.png" width="80%" alt=""><br>
+
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+    <h3>LINE</h3>
+    <p>ID:dead_child</p><br>
+    <img src="IMAGE/4.png" width="50%" alt=""><br>
+
+    </div>
+
+    <script>
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    </script>
+        	<!-- Scripts -->
+             <script src="assets/js/jquery.min.js"></script>
+             <script src="assets/js/jquery.dropotron.min.js"></script>
+             <script src="assets/js/browser.min.js"></script>
+             <script src="assets/js/breakpoints.min.js"></script>
+              <script src="assets/js/util.js"></script>
+             <script src="assets/js/main.js"></script>
+</body>
+</html>
